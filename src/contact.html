@@ -37,25 +37,25 @@
         <p class="fs-5 text-muted">Volem ajudar-te a complir assolir els teus reptes, a superar-te, a que trobis la teva millor versió. Comencem?</p>
     </div>
 
-    <form name="contact-test" method="POST" data-netlify="true">
-        <p>
-            <label>Your Name: <input type="text" name="name" /></label>
-        </p>
-        <p>
-            <label>Your Email: <input type="email" name="email" /></label>
-        </p>
-        <p>
+    <form name="contact-benesfit" method="POST" data-netlify="true">
+        <div class="form-group">
+            <label>Nom i cognoms: <input type="text" class="form-control" name="name" /></label>
+        </div>
+        <div class="form-group">
+            <label>Email:<input type="email" class="form-control" name="email" /></label>
+        </div>
+        <div class="form-group">
             <label>Your Role: <select name="role[]" multiple>
             <option value="leader">Leader</option>
             <option value="follower">Follower</option>
           </select></label>
-        </p>
-        <p>
-            <label>Message: <textarea name="message"></textarea></label>
-        </p>
-        <p>
-            <button type="submit">Send</button>
-        </p>
+        </div>
+        <div class="form-group">
+            <label>Com podem ajudar-te? <textarea name="message"></textarea></label>
+        </div>
+        <div class="form-group">
+            <button type="submit">Enviar</button>
+        </div>
     </form>
 
     <form name="contact-benesfit" method="POST" data-netlify="true" data-netlify-recaptcha="true">
