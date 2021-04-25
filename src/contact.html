@@ -32,9 +32,41 @@
         </header>
     </div>
 
+    <form name="benesfit_contact" method="POST" data-netlify="true">
+        <p>
+            <label>Nom i cognoms: <input type="text" name="name" /></label>
+        </p>
+        <p>
+            <label>Email <input type="email" name="email" /></label>
+        </p>
+        <p>
+            <label>Telèfon <input type="phone" name="phone" /></label>
+        </p>
+        <p>
+            <label>Quin pla t'agradaria agafar? <select name="plan[]" multiple>
+            <option value="giveme5">Give me 5</option>
+            <option value="top10experience">Top 10 Experience</option>
+            <option value="friendsandfamily">Friends & Family</option>
+            <option value="others">No ho tinc clar</option>
+          </select></label>
+        </p>
+        <p>
+            <label>Missatge: <textarea name="message"></textarea></label>
+        </p>
+        <p>
+            <button type="submit">Enviar</button>
+        </p>
+    </form>
 
 
+    <!-- FOOTER -->
+    <footer class="container">
+        <p class="float-end">
+            <a href="#">Tornar</a>
+        </p>
+        <p>&copy; Benesfit 2021 &middot; <a href="#">Privacitat</a> &middot; <a href="#">Cookies</a></p>
 
+    </footer>
 
 
     <script src="./assets/scripts/main.js"></script>
