@@ -43,84 +43,35 @@
                 <label>Nom *<input type="text" class="form-control" name="name" /></label>
             </div>
             <div class="form-group col-lg-2">
-                <label>Cognoms<input type="text" class="form-control" name="name" /></label>
-            </div>
-        </div>
-        <div class="form-group col-lg-2">
-            <label>Email:<input type="email" class="form-control" name="email" /></label>
-        </div>
-        <div class="form-group">
-            <label>Your Role: <select name="role[]" multiple>
-            <option value="leader">Leader</option>
-            <option value="follower">Follower</option>
-          </select></label>
-        </div>
-        <div class="form-group">
-            <label>Com podem ajudar-te? <textarea name="message"></textarea></label>
-        </div>
-        <div class="form-group">
-            <button type="submit">Enviar</button>
-        </div>
-    </form>
-
-
-
-    <form name="benesfit_formulari_contacte" method="POST" data-netlify="true">
-        <div class="row justify-content-md-center">
-            <div class="form-group col-md-3">
-                <label for="inputName" class="form-label">Nom *</label>
-                <input type="text" class="form-control" id="inputName">
-
-            </div>
-            <div class="form-group col-md-3">
-                <label for="inputSurname" class="form-label">Cognom/s</label>
-                <input type="text" class="form-control" id="inputSurname">
-
+                <label>Cognoms<input type="text" class="form-control" name="surname" /></label>
             </div>
         </div>
         <div class="row justify-content-md-center">
-            <div class="form-group col-md-3">
-                <label for="inputPhone" class="form-label">Telèfon *</label>
-                <input type="phone" class="form-control" id="inputPhone">
-
+            <div class="form-group col-lg-2">
+                <label>Telèfon<input type="phone" class="form-control" name="phone" /></label>
             </div>
-            <div class="form-group col-md-3">
-                <label for="inputEmail" class="form-label">Email</label>
-                <input type="email" class="form-control" id="inputEmail">
+            <div class="form-group col-lg-2">
+                <label>Email<input type="email" class="form-control" name="email" /></label>
             </div>
         </div>
         <div class="row justify-content-md-center">
             <div class="form-group col-md-6">
-                <label for="inputPlan" class="form-label">Quin pla t'interessa?</label>
-                <select id="inputPlan" class="form-select">
-                    <option selected>Tria...</option>
-                    <option>Give me 5</option>
-                    <option>Top 10 Experience</option>
-                    <option>Friends & Family</option>
-                    <option>No ho sé</option>
-                  </select>
+                <label>Quin pla t'interessa? <select name="plan[]" class="form-select">
+                <option selected>Tria...</option>
+                <option>Give me 5</option>
+                <option>Top 10 Experience</option>
+                <option>Friends & Family</option>
+                <option>No ho sé</option>
+              </select> </label>
             </div>
         </div>
         <div class="row justify-content-md-center">
             <div class="form-group col-md-6">
-                <label for="inputText" class="form-label">Text</label>
-                <textarea type="text" class="form-control" id="inputText">
+                <label>Com podem ajudar-te? <textarea class="form-control" name="message"></textarea></label>
             </div>
         </div>
-
         <div class="row justify-content-md-center">
-            <div class="form-group col-md-6">
-                <div class="form-check">
-                    <input class="form-check-input" type="checkbox" id="gridCheck">
-                    <label class="form-check-label" for="gridCheck">
-                  Confirmo que vull rebre informació
-                </label>
-                </div>
-            </div>
-        </div>
-
-        <div class="row justify-content-md-center">
-            <div class="col-md-1">
+            <div class="form-group col-md-1">
                 <button type="submit" class="btn btn-primary">Enviar</button>
             </div>
         </div>
