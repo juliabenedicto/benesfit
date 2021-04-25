@@ -32,33 +32,80 @@
         </header>
     </div>
 
+    <div class="p-3 pb-md-4 mx-auto text-center">
+        <h1 class="display-4 fw-normal">Contacte</h1>
+        <p class="fs-5 text-muted">Volem ajudar-te a complir assolir els teus reptes, a superar-te, a que trobis la teva millor versió. Comencem?</p>
+    </div>
+
     <form name="benesfit_contact" method="POST" data-netlify="true">
-        <p>
-            <label>Nom i cognoms: <input type="text" name="name" /></label>
-        </p>
-        <p>
-            <label>Email <input type="email" name="email" /></label>
-        </p>
-        <p>
-            <label>Telèfon <input type="phone" name="phone" /></label>
-        </p>
-        <p>
-            <label>Quin pla t'agradaria agafar? <select name="plan[]" multiple>
-            <option value="giveme5">Give me 5</option>
-            <option value="top10experience">Top 10 Experience</option>
-            <option value="friendsandfamily">Friends & Family</option>
-            <option value="others">No ho tinc clar</option>
-          </select></label>
-        </p>
-        <p>
-            <label>Missatge: <textarea name="message"></textarea></label>
-        </p>
-        <p>
-            <button type="submit">Enviar</button>
-        </p>
+        <div class="row justify-content-md-center needs-validation" novalidate>
+            <div class="col-md-3">
+                <label for="inputName" class="form-label">Nom *</label>
+                <input type="text" class="form-control" id="inputName" required>
+                <div class="invalid-feedback">
+                    Introdueix el teu nom
+                </div>
+            </div>
+            <div class="col-md-3">
+                <label for="inputSurname" class="form-label">Cognom/s</label>
+                <input type="text" class="form-control" id="inputSurname">
+                <div class="valid-feedback">
+                    Introdueix el teu cognom
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-md-center">
+            <div class="col-md-3">
+                <label for="inputPhone" class="form-label">Telèfon *</label>
+                <input type="phone" class="form-control" id="inputPhone" required>
+                <div class="valid-feedback">
+                    Introdueix el teu telèfon
+                </div>
+            </div>
+            <div class="col-md-3">
+                <label for="inputEmail" class="form-label">Email</label>
+                <input type="email" class="form-control" id="inputEmail">
+            </div>
+        </div>
+        <div class="row justify-content-md-center">
+            <div class="col-md-6">
+                <label for="inputPlan" class="form-label">Quin pla t'interessa?</label>
+                <select id="inputPlan" class="form-select">
+                    <option selected>Tria...</option>
+                    <option>Give me 5</option>
+                    <option>Top 10 Experience</option>
+                    <option>Friends & Family</option>
+                    <option>No ho sé</option>
+                  </select>
+            </div>
+        </div>
+        <div class="row justify-content-md-center">
+            <div class="col-md-6">
+                <label for="inputText" class="form-label">Text</label>
+                <textarea type="text" class="form-control" id="inputText">
+            </div>
+        </div>
+
+        <div class="row justify-content-md-center">
+            <div class="col-md-6">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="gridCheck" required>
+                    <label class="form-check-label" for="gridCheck">
+                  Confirmo que vull rebre informació
+                </label>
+                </div>
+            </div>
+        </div>
+
+        <div class="row justify-content-md-center">
+            <div class="col-md-1">
+                <button type="submit" class="btn btn-primary">Enviar</button>
+            </div>
+        </div>
     </form>
 
 
+    <hr class="featurette-divider">
     <!-- FOOTER -->
     <footer class="container">
         <p class="float-end">
