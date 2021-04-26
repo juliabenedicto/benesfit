@@ -16,21 +16,39 @@
 
 <body>
 
-    <div class="container py-3">
-        <header class="d-flex flex-column flex-md-row align-items-center pb-3 mb-4 border-bottom">
-            <a href="/" class="d-flex align-items-center text-dark text-decoration-none">
+    <header class="fixed-top bg-white py-2">
+        <div class="container">
 
-                <span class="fs-4">Benesfit</span>
-            </a>
+            <div class="row justify-content-md-between align-items-center">
+                <div class="col-12 col-md-4 d-flex justify-content-center justify-content-md-start ">
+                    <a href="index.html" class="logo-benesfit text-uppercase text-md-start">Benesfit</a>
+                </div>
 
-            <nav class="d-inline-flex mt-2 mt-md-0 ms-md-auto">
-                <a class="me-3 py-2 text-dark text-decoration-none" href="index.html">Inici</a>
-                <a class="me-3 py-2 text-dark text-decoration-none" href="team.html">Equip</a>
-                <a class="me-3 py-2 text-dark text-decoration-none" href="pricing.html">Plans</a>
-                <a class="py-2 text-dark text-decoration-none" href="contact.html">Contacte</a>
-            </nav>
-        </header>
-    </div>
+                <div class="col-12 col-md-8">
+                    <nav>
+                        <ul class="nav justify-content-center justify-content-md-end">
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.html">Inici</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" href="team.html">Equip</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="pricing.html">Plans</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link btn btn-outline-primary" href="contact.html">Contacte</a>
+                            </li>
+
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        </div>
+    </header>
+
+    <div class="container py-5"></div>
 
     <div class="p-3 pb-md-4 mx-auto text-center">
         <h1 class="display-4 fw-normal">Contacte</h1>
@@ -82,12 +100,15 @@
 
     <hr class="featurette-divider">
     <!-- FOOTER -->
-    <footer class="container">
-        <p class="float-end">
-            <a href="#">Tornar</a>
-        </p>
-        <p>&copy; Benesfit 2021 &middot; <a href="#">Privacitat</a> &middot; <a href="#">Cookies</a></p>
-
+    <footer class="container pt-3 mt-3">
+        <div class="row align-items-center">
+            <div class="col-12 col-md-6">
+                <p class="text-uppercase text-center text-md-start logo-footer"> &copy;Benesfit 2021</p>
+            </div>
+            <div class="col-12 col-md-6">
+                <p class="text-center text-md-end"><a href="contact.html">Contacte</a> &middot; <a href="https://instagram.com/benesfit/">Instagram</a></p>
+            </div>
+        </div>
     </footer>
 
 
