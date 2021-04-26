@@ -55,47 +55,50 @@
         <p class="fs-5 text-muted">Volem ajudar-te a complir assolir els teus reptes, a superar-te, a que trobis la teva millor versió. Comencem?</p>
     </div>
 
-    <form name="contact-benesfit" method="POST" data-netlify="true">
-        <div class="row justify-content-md-center">
-            <div class="form-group col-lg-2">
-                <label>Nom *<input type="text" class="form-control" name="name" /></label>
+    <div class="container">
+        <form name="contact-benesfit" method="POST" data-netlify="true">
+            <div class="row">
+                <div class="form-group col-12 col-md-6 d-flex justify-content-md-end">
+                    <label class="col-12 col-md-6">Nom *<input type="text" class="form-control" name="name" /></label>
+                </div>
+                <div class="form-group col-12 col-md-6 d-flex">
+                    <label class="col-12 col-md-6">Cognoms<input type="text" class="form-control" name="surname" /></label>
+                </div>
             </div>
-            <div class="form-group col-lg-2">
-                <label>Cognoms<input type="text" class="form-control" name="surname" /></label>
+            <div class="row">
+                <div class="form-group col-12 col-md-6 d-flex justify-content-md-end">
+                    <label class="col-12 col-md-6">Telèfon<input type="phone" class="form-control" name="phone" /></label>
+                </div>
+                <div class="form-group col-12 col-md-6">
+                    <label class="col-12 col-md-6">Email<input type="email" class="form-control" name="email" /></label>
+                </div>
             </div>
-        </div>
-        <div class="row justify-content-md-center">
-            <div class="form-group col-lg-2">
-                <label>Telèfon<input type="phone" class="form-control" name="phone" /></label>
-            </div>
-            <div class="form-group col-lg-2">
-                <label>Email<input type="email" class="form-control" name="email" /></label>
-            </div>
-        </div>
-        <div class="row justify-content-md-center">
-            <div class="form-group col-lg-2">
-                <label>Quin pla t'interessa? <select name="plan[]" class="form-select">
+            <div class="row">
+                <div class="form-group ccol-12 col-md-6 d-flex justify-content-md-end">
+                    <label class="col-12 col-md-6">Quin pla t'interessa? <select name="plan[]" class="form-select">
                 <option selected>Tria...</option>
                 <option>Give me 5</option>
                 <option>Top 10 Experience</option>
                 <option>Friends & Family</option>
                 <option>No ho sé</option>
               </select> </label>
+                </div>
+
+                <div class="form-group col-12 col-md-6">
+                    <label class="col-12 col-md-6">Com podem ajudar-te? <textarea class="form-control" name="message"></textarea></label>
+                </div>
             </div>
-        </div>
-        <div class="row justify-content-md-center">
-            <div class="form-group col-lg-2">
-                <label>Com podem ajudar-te? <textarea class="form-control" name="message"></textarea></label>
+            <div class="row ">
+                <div class="form-group col-12 pt-3 d-flex justify-content-md-center">
+                    <button type="submit" class="btn btn-primary col-12 col-md-3">Enviar</button>
+                </div>
             </div>
+        </form>
+    </div>
+    <div class="container">
+        <div class="row d-flex justify-content-md-center">
+            <img src="assets/images/contact-benesfit.jpg" class="img-fluid shadow-1-strong rounded mt-4 m-md-5 col-12 col-md-4 " />
         </div>
-        <div class="row justify-content-md-center">
-            <div class="form-group col-md-1">
-                <button type="submit" class="btn btn-primary">Enviar</button>
-            </div>
-        </div>
-    </form>
-    <div class="container-sm">
-        <img src="assets/images/contact-benesfit.jpg" class="img-fluid shadow-1-strong rounded p-3" alt="" />
     </div>
 
     <hr class="featurette-divider">
