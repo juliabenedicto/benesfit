@@ -5,4 +5,5 @@ cursive;
 $font-family-body: "Lato",
 sans-serif;
 //COLORS
-$the-colors:( "primary": #3ada50);
+$primary: $blue !default;
+$secondary: $orange !default;
